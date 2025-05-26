@@ -69,9 +69,10 @@ Model yang digunakan dalam menyelesaikan masalah ini adalah Random Forest dan Li
 Parameter yang digunakan adalah n_estimator=50, ini merupakan jumlah pohon keputusan yang digunakan dalam forest. Semakin banyak jumlahnya, maka akan semakin stabil hasil prediksi, namun waktu komputasinya juga akan meningkat. max_dept=16 merupakan maksimum dari tiap pohon, ini mencegah pohon menjadi terlalu dalam dan menyebabkan overfitting. random_state=55 untuk memastikan hasil yang konsisten saat dijalankan ulang. n_jobs=1 akan mengaktifkan pemrosesan paralel untuk memanfaatkan seluruh core CPU saat training model.
 
   Tahapan yang dilakukan setelah proses data preparation (melakukan normalisasi dengan standardScaler dan train test split), yaitu:
-1. melakukan inisialisasi model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
-2. training model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
-3. prediksi dan ealuasi model, RF.predict(X_train)
+  1. melakukan inisialisasi model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
+  2. training model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
+  3. prediksi dan ealuasi model, RF.predict(X_train)
+
 - Linear Regression
   Merupakan model untuk memetakan hubungan linear antara satu atau lebih fitur (independen) dengan target output (dependen). Ini cocok digunakan saat hubungan antar variabel cenderung linear dan interpretasinya sederhana, hanya saja sensitif terhadap outlier dan kurang fleksibel untuk hubungan non-linear. Parameter pada linear regression biasanya menggunakan default sehingga tidak ada yang di set. 
 
