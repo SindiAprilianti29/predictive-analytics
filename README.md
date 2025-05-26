@@ -42,25 +42,37 @@ Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pe
     - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+Dataset yang digunakan dalam project ini berasal dari Kaggle, yang berjudul Mental Health and Digital Behaviour (2020-2024), yang dapat diunduh pada tautan berikut: 
+(https://www.kaggle.com/datasets/atharvasoundankar/mental-health-and-digital-behavior-20202024).
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
+### Variabel-variabel pada dataset Mental Health and Digital Behaviour (2020-2024) adalah sebagai berikut:
+- daily_screen_time_min : merupakan total screen time harian (menit)
+- num_app_switches: merupakan frekuensi berpindah aplikasi dalam sehari
+- sleep_hours: merupakan durasi tidur harian (jam)
+- notification_count: merupakan jumlah notifikasi yang diterima
+- social_media_time_min: merupakan waktu penggunaan media sosial (menit)
+- mood_Score: merupakan skor suasana hati (1-10)
+- digital_wellbeing_score: merupakan skor kesejahteraan digital gabungan
+- focus_score: merupaka skor fokus (1-10)
 
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+Beberapa tahapan EDA yang dilakukan pada dataset:
+- Melihat jumlah entri data dan fitur menggunakan df.shape
+- Melihat contoh data dengan df.head()
+- Melihat statistik deskriptif dari data dengan df.describe()
+- Melihat missing values dengan df.isnull().sum()
+- Melihat data duplikat dengan df.duplicated.sum()
+- Menampilkan boxplot untuk melihat outlier
+- Hapus outlier dengan metode IQR
+- Menampilkan histogram, pairplot, dan correlation_matrix untuk memahami karakteristik dan hubungan yang ada dalam dataset. 
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
-
+Pada tahap ini dilakukan dua langkah data preparation
+- Train test split
+  Data dibagi menjadi dua bagian, yaitu data train dan data test. Tujuannya untuk melatih model pada data train dan menguji performa model pada data test yang belum pernah dilihat oleh model sebelumnya, sehingga dapat evaluasi kemampuan generalisasi model. Pada project ini, pembagiannya dilakukan dengan rasio sebesar 80:20, dengan data train sebesar 80% dan data test 20%, ini ideal untuk dataset yang memiliki entri data yang sedikit, karena dataset yang digunakan memiliki entri data kurang dari 1000.
+- Normalisasi menggunakan StandardScaler()
+  Karena fitur memiliki skala yang berbeda-beda, maka dilakukan normalisasi agar semua fitur memiliki rata-rata 0 dan standar deviasi 1. Ini penting agar model dapat bekerja dengan lebih optimal dan stabil. normalisasi dilakukan dengan StandardScaler.
+  
 ## Modeling
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
 Model yang digunakan dalam menyelesaikan masalah ini adalah Random Forest dan Linear Regression. 
