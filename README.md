@@ -35,13 +35,6 @@ Menjelaskan tujuan dari pernyataan masalah:
 - Melakukan evaluasi dan seleksi model
   Menggunakan MSE untuk mengukur sejauh mana nilai prediksi berbeda dari nilai aktual focus_score dan memilih model yang memiliki nilai MSE paling rendah
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
-
-    ### Solution statements
-    - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-    - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
-
 ## Data Understanding
 Dataset yang digunakan dalam project ini berasal dari Kaggle, yang berjudul Mental Health and Digital Behaviour (2020-2024), yang dapat diunduh pada tautan berikut: 
 (https://www.kaggle.com/datasets/atharvasoundankar/mental-health-and-digital-behavior-20202024).
