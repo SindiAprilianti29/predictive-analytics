@@ -1,9 +1,7 @@
 # Laporan Proyek Machine Learning Predictive Analytics - Sindi Aprilianti
 
 ## Domain Project: Kesehatan
-Dalam kehidupan modern yang sangat bergantung dengan teknologi digital saat ini, kemampuan individu untuk tetap fokus menjadi masalah tersendiri. Penggunaan sosial media yang terus menerus, notifikasi yang tak berhenti, dan juga kecenderungan untuk sering pindah aplikasi berpotensi memecah perhatian dan mengganggu konsentrasi. Fenomena ini dikenal sebagai digital distraction. 
-
-Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
+Kemajuan pesat dalam teknologi digital serta peningkatan penggunaan perangkat digital telah menyebabkan perubahan yang signifikan dalam pola perilaku harian individu. Salah satu fungsi kognitif yang sangat dipengaruhi oleh interaksi dengan teknolofi digital adalah fokus, yaitu kemampuan seseorang untuk mempertahankan perhatian dalam jangka waktu tertentu, yang sangat penting bagi produktivitas dan kesejahteraan mental. Husain et al. (2024) dalam penelitiannya menyampaikan bahwa kecanduan media sosial juga ternyata berkorelasi negatif dengan kemampuan fokus dan kesadaran penuh pada mahasiswa. Semakin tinggi kecanduan media sosial, semakin sulit bagi individu untuk mempertahankan perhatian dan keterlibatan penuh dalam aktivitas sehari-hari, akibat gangguan terus-menerus dari notifikasi dan informasi dari sosial media. Dengan mengembangkan model prediksi yang akurat, dapat diberikan intervensi yang tepat, guna membantu individu mengatur waktu pemakaian perangkat digital sekaligus menjaga keseimbangan kesehatan mental mereka. Dataset Mental Health and Digital Behaviour (2020-2024) digunakan dalam pembuatan model machine learning untuk memperbaiki focus_score berdasarkan berbagai fitur perilaku digital, seprti durasi penggunaan layar, jumlah notifikasi, frekuensi pergantian aplikais, dan lainnya. 
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
