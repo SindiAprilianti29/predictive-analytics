@@ -85,8 +85,7 @@ Parameter yang digunakan adalah n_estimator=50, ini merupakan jumlah pohon keput
 ## Evaluation
 Metrik evaluasi yang digunakan adalah Mean Squared Error (MSE), yaitu salah satu metrik untuk regresi. MSE mengukur rata-rata dari kuadrat selisih antara nilai actual dengan nilai yang diprediksi sebagai model. Berikut merupakan formula dari MSE:
 
-![image](https://github.com/user-attachments/assets/2a282d32-ef86-4d1f-bd45-dba3ba62e72b)
-
+![image](https://github.com/user-attachments/assets/4b20f12e-515e-49a1-a811-28cf6d862fc7)
 
 Hasil evaluasi kedua model menggunakan metrik MSE adalah sebagai berikut
 
