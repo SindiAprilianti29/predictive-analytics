@@ -3,11 +3,8 @@
 ## Domain Project: Kesehatan
 Kemajuan pesat dalam teknologi digital serta peningkatan penggunaan perangkat digital telah menyebabkan perubahan yang signifikan dalam pola perilaku harian individu. Salah satu fungsi kognitif yang sangat dipengaruhi oleh interaksi dengan teknolofi digital adalah fokus, yaitu kemampuan seseorang untuk mempertahankan perhatian dalam jangka waktu tertentu, yang sangat penting bagi produktivitas dan kesejahteraan mental. Husain et al. (2024) dalam penelitiannya menyampaikan bahwa kecanduan media sosial juga ternyata berkorelasi negatif dengan kemampuan fokus dan kesadaran penuh pada mahasiswa. Semakin tinggi kecanduan media sosial, semakin sulit bagi individu untuk mempertahankan perhatian dan keterlibatan penuh dalam aktivitas sehari-hari, akibat gangguan terus-menerus dari notifikasi dan informasi dari sosial media. Dengan mengembangkan model prediksi yang akurat, dapat diberikan intervensi yang tepat, guna membantu individu mengatur waktu pemakaian perangkat digital sekaligus menjaga keseimbangan kesehatan mental mereka. Dataset Mental Health and Digital Behaviour (2020-2024) digunakan dalam pembuatan model machine learning untuk memperbaiki focus_score berdasarkan berbagai fitur perilaku digital, seprti durasi penggunaan layar, jumlah notifikasi, frekuensi pergantian aplikais, dan lainnya. 
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
-- Format Referensi dapat mengacu pada penulisan sitasi [IEEE](https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE_Reference_Guide.pdf), [APA](https://www.mendeley.com/guides/apa-citation-guide/) atau secara umum seperti [di sini](https://penerbitdeepublish.com/menulis-buku-membuat-sitasi-dengan-mudah/)
-- Sumber yang bisa digunakan [Scholar](https://scholar.google.com/)
+Daftar pustaka: Husain, M., Mushtaq, N., Mahsud, N.M., Afzal, H., Naseer, S., Hussain, D. (2024). The Effect of Social Media Addiction on Attention Span and 
+Aggression among University Students. Kurdish Studies. Available at https://www.researchgate.net/profile/Muhammad-Hussain-223/publication/381403305_Effect_of_Social_Media_Addiction_on_Attention_Span_and_Aggression_among_University_Students/links/666b9e3d85a4ee7261c0ef4f/Effect-of-Social-Media-Addiction-on-Attention-Span-and-Aggression-among-University-Students.pdf  
 
 ## Business Understanding
 
