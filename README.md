@@ -83,19 +83,19 @@ Parameter yang digunakan adalah n_estimator=50, ini merupakan jumlah pohon keput
      Model terbaik untuk permasalahan ini dapat diketahui setelah melakukan evaluasi menggunakan metrik MSE pada data training dan testing. Dari hasil yang didapat, model yang cocok untuk masalah ini adalah Linear Regression karena MSE yang dihasilkan lebih kecil. Linear regression juga lebih sederhana dan mudah diinterpretasi.
 
 ## Evaluation
-Metrik evaluasi yang digunakan adalah Mean Squared Error (MSE), yaitu salah satu metrik untuk regresi. MSE mengukur rata-rata dari kuadrat selisih antara nilai actual dengan nilai yang diprediksi sebagai model, dengan hasil sebagai berikut
+Metrik evaluasi yang digunakan adalah Mean Squared Error (MSE), yaitu salah satu metrik untuk regresi. MSE mengukur rata-rata dari kuadrat selisih antara nilai actual dengan nilai yang diprediksi sebagai model. Berikut merupakan formula dari MSE:
+
+![image](https://github.com/user-attachments/assets/2a282d32-ef86-4d1f-bd45-dba3ba62e72b)
+
+
+Hasil evaluasi kedua model menggunakan metrik MSE adalah sebagai berikut
 
 ![image](https://github.com/user-attachments/assets/396b7772-1ce0-4f09-b1aa-156e8771fe01)
 
-Pada gambar, terlihat bahwa LR (Linear Regression) memiliki MSE yang lebih rendah daripada RF (Random Forest). Hal ini menunjukkan bahwa model Linear Regression lebih sesuai digunakan untuk kasus ini. 
+Pada gambar tersebut, terlihat bahwa nilai MSE dari model Linear Regression (LR) lebih rendah dibandingkan dengan model Random Forest (RF). Nilai MSE yang lebih rendah menunjukkan bahwa model LR memiliki tingkat kesalahan prediksi yang lebih kecil. 
 
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
+Berikutnya, ketika dilakukan prediksi terhadap data uji, hasil prediksi dari model linear regression lebih sesuai dengan nilai aktual dibandingkan hasil prediksi dengan random forest. 
 
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
+![image](https://github.com/user-attachments/assets/430cacf0-02b3-4be6-9df8-3318fb4309c3)
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+Hal ini menunjukkan bahwa model Linear Regression lebih sesuai digunakan untuk kasus ini karena memberikan prediksi yang lebih akurat dan konsisten dengan data sebenarnya.
