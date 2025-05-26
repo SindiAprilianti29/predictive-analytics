@@ -13,26 +13,27 @@ Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek
 
 ## Business Understanding
 
-
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
-Bagian laporan ini mencakup:
-
 ### Problem Statements
 
 Menjelaskan pernyataan masalah latar belakang:
-- Pernyataan Masalah 1: 
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+- Pernyataan Masalah 1: Dari serangkaian fitur yang tersedia, fitur manakan yang paling berpengaruh terhadap skor fokus seseorang?
+- Pernyataan Masalah 2: Apakah mungkin memprediksi tingkat fokus seseorang berdasarkan data perilaku digital?
+- Pernyataan Masalah 3: Sejauh maan akurasi model machine learning dalam memperkirakan skor fokus menggunakan dataset tersebut?
 
 ### Goals
 
 Menjelaskan tujuan dari pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+- Jawaban pernyataan masalah 1: Mengetahui fitur-fitur yang paling berkorelasi dengan penurunan atau peningkatan focus_score.
+- Jawaban pernyataan masalah 2: Membuat model machine learning yang dapat memprediksi focus_score secara akurat berdasarkan variabel dalam dataset
+- Jawaban pernyataan masalah 3: Membandingkan beberapa algoritma regresi dan memilih model dengan error terkecil berdasarkan metrik evaluasi
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+### Solution Statements
+- Menerapkan dua algoritma regresi
+  Menggunakan algoritma Linear Regression dan Random Forest Regressor
+- Melakukan data preparation
+  Melakukan normalisasi fitur dengan StandardScaler, train test split dengan proporsi 80:20, dan outlier handling dengan metode IQR.
+- Melakukan evaluasi dan seleksi model
+  Menggunakan MSE untuk mengukur sejauh mana nilai prediksi berbeda dari nilai aktual focus_score dan memilih model yang memiliki nilai MSE paling rendah
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
