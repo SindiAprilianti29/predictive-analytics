@@ -99,4 +99,4 @@ Berikutnya, ketika dilakukan prediksi terhadap data uji, hasil prediksi dari mod
 
 ![image](https://github.com/user-attachments/assets/430cacf0-02b3-4be6-9df8-3318fb4309c3)
 
-Hal ini menunjukkan bahwa model Linear Regression lebih sesuai digunakan untuk kasus ini karena memberikan prediksi yang lebih akurat dan konsisten dengan data sebenarnya.
+Hasil menunjukkan bahwa model Linear Regression lebih sesuai digunakan untuk kasus ini karena mampu memberikan prediksi yang lebih akurat dan konsisten dengan data aktual. Analisis korelasi mengindikasikan bahwa fitur notification_count dengan nilai korelasi (-0.34), daily_Screen_time(-0.28), dan num_app_switches(-0.25) memiliki pengaruh negatif terhadap focus_score. Artinya, semakin tinggi nilai ketiga fitur tersebut, maka skor fokus cenderung menurun. Sebaliknya, fitur digital_wellbeing_score menunjukkan korelasi positif sebesar 0.41 dengan focus_score, yang berarti peningkatan skor kesejahteraan digital berkaitan dengan peningkatan skor fokus. 
