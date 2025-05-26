@@ -65,19 +65,22 @@ Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dil
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
 Model yang digunakan dalam menyelesaikan masalah ini adalah Random Forest dan Linear Regression. 
 - Random Forest
-  Random Forest Regressor merupakan sebuah algoritma ensemble yang basisnya adalah decision tree, bekerja dengan membangun beberapa trees (pohon keputusan) dan menggabungkan hasil prediksi dari semua pohon tersebut, dengan mengambil nilai rata-ratanya.
-  Parameter yang digunakan adalah n_estimator=50, ini merupakan jumlah pohon keputusan yang digunakan dalam forest. Semakin banyak jumlahnya, maka akan semakin stabil hasil prediksi, namun waktu komputasinya juga akan meningkat. max_dept=16 merupakan maksimum dari tiap pohon, ini mencegah pohon menjadi terlalu dalam dan menyebabkan overfitting. random_state=55 untuk memastikan hasil yang konsisten saat dijalankan ulang. n_jobs=1 akan mengaktifkan pemrosesan paralel untuk memanfaatkan seluruh core CPU saat training model.
+  Random Forest Regressor merupakan sebuah algoritma ensemble yang basisnya adalah decision tree, bekerja dengan membangun beberapa trees (pohon keputusan) dan menggabungkan hasil prediksi dari semua pohon tersebut, dengan mengambil nilai rata-ratanya. Model ini tidak terlalu sensitif terhadap outlier dan missing values, hanya saja modelnya menghabiskan waktu training dan prediksi yang relatif lebih lama, terutama jika estimator besar dan datasetnya juga besar. 
+Parameter yang digunakan adalah n_estimator=50, ini merupakan jumlah pohon keputusan yang digunakan dalam forest. Semakin banyak jumlahnya, maka akan semakin stabil hasil prediksi, namun waktu komputasinya juga akan meningkat. max_dept=16 merupakan maksimum dari tiap pohon, ini mencegah pohon menjadi terlalu dalam dan menyebabkan overfitting. random_state=55 untuk memastikan hasil yang konsisten saat dijalankan ulang. n_jobs=1 akan mengaktifkan pemrosesan paralel untuk memanfaatkan seluruh core CPU saat training model.
 
   Tahapan yang dilakukan setelah proses data preparation (melakukan normalisasi dengan standardScaler dan train test split), yaitu:
 1. melakukan inisialisasi model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
 2. training model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
 3. prediksi dan ealuasi model, RF.predict(X_train)
 - Linear Regression
+  Merupakan model untuk memetakan hubungan linear antara satu atau lebih fitur (independen) dengan target output (dependen). Ini cocok digunakan saat hubungan antar variabel cenderung linear dan interpretasinya sederhana, hanya saja sensitif terhadap outlier dan kurang fleksibel untuk hubungan non-linear. Parameter pada linear regression biasanya menggunakan default sehingga tidak ada yang di set. 
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+  Tahapan yang dilakukan adalah
+  1. inisialisasi model,  LinearRegression()
+  2. Latih model dengan data training, fit(X_train, y_train)
+  3. Hitung error MSE di data training dan simpan hasilnya mean_squared_error
+
+     Model terbaik untuk permasalahan ini dapat diketahui setelah melakukan evaluasi menggunakan metrik MSE pada data training dan testing. Dari hasil yang didapat, model yang cocok untuk masalah ini adalah Linear Regression karena MSE yang dihasilkan lebih kecil. Linear regression juga lebih sederhana dan mudah diinterpretasi.
 
 ## Evaluation
 Metrik evaluasi yang digunakan adalah Mean Squared Error (MSE), yaitu salah satu metrik untuk regresi. MSE mengukur rata-rata dari kuadrat selisih antara nilai actual dengan nilai yang diprediksi sebagai model, dengan hasil sebagai berikut
