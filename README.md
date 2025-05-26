@@ -1,6 +1,7 @@
 # Laporan Proyek Machine Learning Predictive Analytics - Sindi Aprilianti
 
 ## Domain Project: Kesehatan
+Dalam kehidupan modern yang sangat bergantung dengan teknologi digital saat ini, kemampuan individu untuk tetap fokus menjadi masalah tersendiri. Penggunaan sosial media yang terus menerus, notifikasi yang tak berhenti, dan juga kecenderungan untuk sering pindah aplikasi berpotensi memecah perhatian dan mengganggu konsentrasi. Fenomena ini dikenal sebagai digital distraction. 
 
 Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
 
@@ -12,6 +13,7 @@ Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek
 
 ## Business Understanding
 
+
 Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
 
 Bagian laporan ini mencakup:
@@ -19,7 +21,7 @@ Bagian laporan ini mencakup:
 ### Problem Statements
 
 Menjelaskan pernyataan masalah latar belakang:
-- Pernyataan Masalah 1
+- Pernyataan Masalah 1: 
 - Pernyataan Masalah 2
 - Pernyataan Masalah n
 
@@ -61,6 +63,16 @@ Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dil
 
 ## Modeling
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+Model yang digunakan dalam menyelesaikan masalah ini adalah Random Forest dan Linear Regression. 
+- Random Forest
+  Random Forest Regressor merupakan sebuah algoritma ensemble yang basisnya adalah decision tree, bekerja dengan membangun beberapa trees (pohon keputusan) dan menggabungkan hasil prediksi dari semua pohon tersebut, dengan mengambil nilai rata-ratanya.
+  Parameter yang digunakan adalah n_estimator=50, ini merupakan jumlah pohon keputusan yang digunakan dalam forest. Semakin banyak jumlahnya, maka akan semakin stabil hasil prediksi, namun waktu komputasinya juga akan meningkat. max_dept=16 merupakan maksimum dari tiap pohon, ini mencegah pohon menjadi terlalu dalam dan menyebabkan overfitting. random_state=55 untuk memastikan hasil yang konsisten saat dijalankan ulang. n_jobs=1 akan mengaktifkan pemrosesan paralel untuk memanfaatkan seluruh core CPU saat training model.
+
+  Tahapan yang dilakukan setelah proses data preparation (melakukan normalisasi dengan standardScaler dan train test split), yaitu:
+1. melakukan inisialisasi model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
+2. training model, RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
+3. prediksi dan ealuasi model, RF.predict(X_train)
+- Linear Regression
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
 - Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
@@ -68,6 +80,12 @@ Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyel
 - Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
 
 ## Evaluation
+Metrik evaluasi yang digunakan adalah Mean Squared Error (MSE), yaitu salah satu metrik untuk regresi. MSE mengukur rata-rata dari kuadrat selisih antara nilai actual dengan nilai yang diprediksi sebagai model, dengan hasil sebagai berikut
+
+![image](https://github.com/user-attachments/assets/396b7772-1ce0-4f09-b1aa-156e8771fe01)
+
+Pada gambar, terlihat bahwa LR (Linear Regression) memiliki MSE yang lebih rendah daripada RF (Random Forest). Hal ini menunjukkan bahwa model Linear Regression lebih sesuai digunakan untuk kasus ini. 
+
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
 
 Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
@@ -78,9 +96,3 @@ Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, probl
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
 - Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
