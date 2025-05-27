@@ -34,6 +34,36 @@ Menjelaskan tujuan dari pernyataan masalah:
 Dataset yang digunakan dalam project ini berasal dari Kaggle, yang berjudul Mental Health and Digital Behaviour (2020-2024), yang dapat diunduh pada tautan berikut: 
 (https://www.kaggle.com/datasets/atharvasoundankar/mental-health-and-digital-behavior-20202024).
 
+- Dataset ini terdiri atas 500 baris data dan 9 kolom
+
+  ![image](https://github.com/user-attachments/assets/15be7fb5-f6a6-4318-ad2f-8435eb6fd40e)
+
+- Tidak terdapat missing values
+
+  ![image](https://github.com/user-attachments/assets/0d29c266-7221-47ca-99d9-12f54ecc71b3)
+
+- Tidak terdapat duplikat data
+
+  ![image](https://github.com/user-attachments/assets/08ba3f59-4ec4-440c-9cde-bf69b0b24e60)
+
+- Semua fitur, kecuali anxiety_level, memiliki outlier
+  
+  ![image](https://github.com/user-attachments/assets/384851be-136a-448f-b105-b78184265200)
+  ![image](https://github.com/user-attachments/assets/6a5ff161-1ea2-4a53-969e-d108ac233589)
+  ![image](https://github.com/user-attachments/assets/c5e0f024-5741-423b-9afe-d62828d396b6)
+  ![image](https://github.com/user-attachments/assets/f51ac7f6-78fa-470c-955d-212f9ed46348)
+  ![image](https://github.com/user-attachments/assets/6b841d0d-a7d1-4c1c-85b3-85766b39b8dc)
+  ![image](https://github.com/user-attachments/assets/c4bc3eb9-c610-4256-b798-7a87add939d6)
+  ![image](https://github.com/user-attachments/assets/60fdbc79-06d2-40e0-9b41-ee5cc72984c8)
+  ![image](https://github.com/user-attachments/assets/60695ef6-64d9-4dc5-a6aa-411313c761ae)
+  ![image](https://github.com/user-attachments/assets/facdc0cf-2b84-4f93-8a3d-c52afd53ebd0)
+
+
+- Hampir semua fitur memiliki sebaran data distribusi normal, mayoritas datanya berada di sekitar rata-rata, kecuali pada fitur anxiety_level yang datanya menjorok ke kiri, menunjukkan bahwa mayoritas orang memiliki anxiety level yang tinggi.
+  ![image](https://github.com/user-attachments/assets/193d6d82-4913-454b-9448-9c0ef5be97b2)
+
+- 
+
 ### Variabel-variabel pada dataset Mental Health and Digital Behaviour (2020-2024) adalah sebagai berikut:
 - daily_screen_time_min : merupakan total screen time harian (menit)
 - num_app_switches: merupakan frekuensi berpindah aplikasi dalam sehari
@@ -43,6 +73,7 @@ Dataset yang digunakan dalam project ini berasal dari Kaggle, yang berjudul Ment
 - mood_Score: merupakan skor suasana hati (1-10)
 - digital_wellbeing_score: merupakan skor kesejahteraan digital gabungan
 - focus_score: merupaka skor fokus (1-10)
+- anxiety_level: merupakan skor level anxiety (1-10)
 
 Beberapa tahapan EDA yang dilakukan pada dataset:
 - Melihat jumlah entri data dan fitur menggunakan df.shape
