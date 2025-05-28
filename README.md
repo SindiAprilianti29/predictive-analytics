@@ -87,7 +87,7 @@ Beberapa tahapan EDA yang dilakukan pada dataset:
   
   ![image](https://github.com/user-attachments/assets/b3566f7f-992d-4179-a658-faa4e845b556)
 
-  Pada asil correlation matrix terlihat beberapa fitur yang memiliki korelasi negatif dengan focus_score diantaranya notification_count (-0.34), daily_screen_time_min (-0.31), dan num_app_switches (-0.28), menunjukkan bahwa ketika ketiga fitur ini meningkat, maka focus_score akan cenderung menurun. Sedangkan digital_wellbeing_score menunjukkan nilai 0.41 terhadap focus_Score menunjukkan fitur ini memiliki korelasi positif. Sedangkan fitur lain nilainya tidak terlalu signifikan.
+  Pada hasil correlation matrix terlihat beberapa fitur yang memiliki korelasi negatif dengan focus_score diantaranya notification_count (-0.34), daily_screen_time_min (-0.31), dan num_app_switches (-0.28), menunjukkan bahwa ketika ketiga fitur ini meningkat, maka focus_score akan cenderung menurun. Sedangkan digital_wellbeing_score menunjukkan nilai 0.41 terhadap focus_Score menunjukkan fitur ini memiliki korelasi positif. Sedangkan fitur lain nilainya tidak terlalu signifikan.
   ![image](https://github.com/user-attachments/assets/28ba2400-507c-4a78-be6f-6d2b9e221bd4)
 
 ## Data Preparation
